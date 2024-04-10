@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<!-- 
+Jean-Philippe
+Institut Saint-Laurent Liege
+Webdeveloper (2014)
+Interface Flat
+Exercice html- Css inclusion de scripts externes. -->
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Expérience professionnelle et savoir-faire d'un Développeur Web | exempl.es</title>
+    <meta name="description"
+          content="Collaborations travaux realisés diverses entreprises liégeoises ont construit mon savoir-faire d'architecte. Maitrise de logiciels tels que PhpStorm, VsCode, Vim. Languages tels PHP, Javascript, Symfony, Laravel, HTML CSS."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/flexslider.css" media="screen"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/960.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<header class="container_12 centrage">
+    <div class="grid_12 largeur">
+        <div class="social">
+            <img src="images/soc-icons/facebook.png" alt="facebook" class="social_face"/>
+        </div>
+        <div class="social">
+            <img src="images/soc-icons/twitter.png" alt="facebook" class="social_face"/>
+        </div>
+        <div class="social">
+            <img src="images/soc-icons/linkedin.png" alt="facebook" class="social_face"/>
+        </div>
+        <div class="social">
+            <img src="images/soc-icons/google.png" alt="facebook" class="social_face"/>
+        </div>
+    </div>
+
+    <div class="grid_4 logo">
+        <h1>Jiphphi Novitz</h1>
+        <h2>Développeur Web</h2>
+    </div>
+
+    <ul class="grid_8">
+        <li class="grid_3 about">
+            <a href="index.html" title="John Doe Home">
+                <span class="onglet"> ABOUT</span>
+                <span class="onglet_bas"> About me</span>
+            </a>
+        </li>
+        <li class="grid_3 folio">
+            <a href="portfolio.html" title="portfolio John Doe ">
+                <span class="onglet"> PORTFOLIO</span>
+                <span class="onglet_bas"> Mes travaux</span>
+            </a>
+
+        </li>
+        <li class="grid_3 profil">
+            <a href="profil.html" title="Architecte John Doe">
+                <span class="onglet"> PROFIL</span>
+                <span class="onglet_bas"> Mon profil</span>
+            </a>
+        </li>
+        <li class="grid_3 ctc">
+            <a href="contact.html" title="contact John Doe">
+                <span class="onglet"> CONTACT</span>
+                <span class="onglet_bas"> Contactez-moi</span>
+            </a>
+        </li>
+    </ul>
+
+</header>
+
+<section class="container_12 centrage">
+
+    <article class="grid_4 no_js slb">
+        <div class="flexslider">
+            <ul class="slides">
+                <li>
+                    <img src="images/slides/me-1.jpg" alt="John Doe_1"/>
+                </li>
+                <li>
+                    <img src="images/slides/me-2.jpg" alt="John Doe_2"/>
+                </li>
+                <li>
+                    <img src="images/slides/me-3.jpg" alt="John Doe"/>
+                </li>
+
+            </ul>
+        </div>
+    </article>
+
+    <article class="grid_4 corps">
+        <h3>John Doe - Architecte
+            <br/>Réalisation et suivi de projets de grande envergure.</h3>
+        <p>"L'imagination est plus importante que le savoir."
+            <br/>Albert Einstein</p>
+
+        <p>Spécialiste dans le domaine depuis plus de 20 ans, je suis votre conseiller technique et artistique
+            pour votre projet immobilier, qu’il s’agisse de votre future habitation, ou d’un bâtiment public,
+            commercial ou industriel.</p>
+    </article>
+    <article class="grid_4 ind">
+        <ul>
+            <li><span class="info">Nom : </span> John Doe</li>
+            <li><span class="info">Age : </span> 35</li>
+            <li><span class="info">Adresse : </span> 33 Rue Saint-Laurent 4000 Liège</li>
+            <li><span class="info">  Email:</span> john@doe.be</li>
+
+            <li><span class="info"> Teléphone: </span> +32 (0)4 223 11 31</li>
+        </ul>
+    </article>
+</section>
+
+<!-- jQuery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+
+<!-- FlexSlider -->
+<script defer src="jquery.flexslider.js"></script>
+
+<script type="text/javascript">
+    $(function () {
+        SyntaxHighlighter.all();
+    });
+    $(window).load(function () {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            start: function (slider) {
+                $('body').removeClass('loading');
+            }
+        });
+    });
+</script>
+
+
+</body>
+
+</html>

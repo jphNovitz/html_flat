@@ -1,0 +1,653 @@
+/*general*/
+body{
+    font-family: 'Open sans',sans-serif;
+    background-image: url(../images/background/bcg.jpg);
+    background-size: cover;
+
+}
+
+.centrage{
+    margin: 10px auto;
+    overflow: hidden;
+}
+
+.largeur{
+    display:block;
+    margin-bottom: 10px;
+}
+
+/* header */
+
+.social{ 
+    display: inline-block;
+    float:left;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+}
+.social_face{
+    position: absolute;
+    top: -30px;
+    width: 30px;
+    transition: all .5s;
+
+}
+.social_face:hover{
+    position: absolute;
+    top: 0px;
+    width: 30px;
+
+}
+
+.logo{
+
+    height: 8.75em;
+    overflow: hidden;
+    background-color: #fff;
+    background-image: url(../images/logoA.png);
+    background-repeat: no-repeat;
+    background-position: 5px 5px;
+    padding: 0;
+    display: block;
+    margin: 0.33222591362126% .5% 0 1%; 
+    position: relative; 
+    float:left;
+
+}
+
+.logo h1{
+
+    display: inline;
+    font-size: 2em;
+    background-color: transparent;
+    color: #404040;
+    margin: 0;
+    position: absolute;
+    top: 35.71428571428571%;
+    right: 3.3222591362126%;
+    letter-spacing: .075em;
+
+
+}
+.logo h2{
+    display: inline;
+    overflow: hidden;
+    margin-top:-10px;
+    color: #404040;
+    font-size: 14px;
+    position: absolute;
+    top: 66.42857142857143%;
+    right: 6.644518272425249%;
+    font-weight: normal;
+}
+
+header ul{
+    float: right;
+    margin: 0;
+    padding: 0;
+
+
+}
+
+header ul li {
+    display: inline-block; 
+    max-height: 8.75em;
+    margin:0 ;
+    padding: 0;
+}
+
+.about{
+    height: 8.75em;
+    background: #00ADEF url(../images/icons/about.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+    float:left;
+    position:relative;
+}
+.about:hover{
+
+    background:#01A1DD  url(../images/icons/about.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+}
+
+.about .onglet{
+    display: block;
+    margin-top:0px;
+    background-color: #fff;
+}
+.about .onglet_bas{
+    display: block;
+    width:100%;
+    position:absolute;
+    bottom:0px;
+    background-color:#01A1DD;
+    color: #fff;
+}
+.folio{
+    height: 8.75em;
+    background: #71AB01 url(../images/icons/portfolio.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+    float:left;
+    position:relative;
+}
+.folio:hover{
+
+    background:#659700  url(../images/icons/portfolio.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+}
+
+.folio .onglet{
+    display: block;
+    margin-top:0px;
+    background-color: #fff;
+}
+.folio .onglet_bas{
+    display: block;
+    width:100%;
+    position:absolute;
+    bottom:0px;
+    background-color:#659700;
+    color: #fff;
+}
+.profil{
+    height: 8.75em;
+    background: #F3A131 url(../images/icons/resume.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+    float: left;
+    position:relative;
+}
+.profil:hover{
+
+    background:#E19324  url(../images/icons/resume.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+}
+
+.profil .onglet{
+    display: block;
+    margin-top:0px;
+    background-color: #fff;
+}
+.profil .onglet_bas{
+    display: block;
+    width:100%;
+    position:absolute;
+    bottom:0px;
+    background-color:#E19324;
+    color: #fff;
+}
+.ctc{
+    height: 8.75em;
+    background: #404040 url(../images/icons/contacts.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+    float:left;
+    position:relative;
+}
+.ctc:hover{
+
+    background:#303030  url(../images/icons/contacts.png) no-repeat center;
+    background-size: 71.42857142857143% ;
+}
+
+.ctc .onglet{
+    display: block;
+    margin-top:0px;
+    background-color: #fff;
+}
+.ctc .onglet_bas{
+    display: block;
+    width:100%;
+    position:absolute;
+    bottom:0px;
+    background-color:#303030;
+    color: #fff;
+}
+
+article img{
+    max-width: 100%;
+}
+
+article h3{
+    font-size: 1.3125em;
+    margin: 0;
+    padding: 1.428571428571429em 0 3px 5px;
+    background-color :#20BFFA;
+    color: #fff;
+    line-height: normal;
+    padding: .2em;
+}
+
+article.corps{
+    background-color :#01A1DD;
+    height: 22.9375em;
+    overflow: auto;
+}
+
+article p {
+    color: #fff;
+    font-size:0.8125em;
+    font-weight: 300;
+    padding: 0.625em;
+    line-height: 1.375em;
+}
+
+
+/* slb sert à mettre un fond blanc pour que mes trois cadres ne fasse pas escaliers */
+.slb{
+    background-color: #fff;
+}
+article.ind ul{
+    margin: 0 0 0 -2%;
+    padding: 0;
+
+}
+article.ind ul li{
+    margin: 0 0 2.2em 0;
+    padding:  0;
+    list-style-type: none;
+    background-color: #01A1DD;
+    color:#fff;
+    font-size: .875em;
+    line-height: 2.47em;
+
+
+}
+
+article ul li:hover{
+    background-color: #01A1DD;
+
+}
+article.ind ul li:hover .info{
+    background-color: #01A1DD;
+
+}
+
+article.ind ul li .info{
+    background-color: #20BFFA;
+    margin:0px 2% 0px 0px;
+    padding: .5em;
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 400;
+
+}
+
+/*portfolio*/
+
+.ptf{
+    height: 66.44518272425249%;
+    position:relative;
+    overflow: hidden;
+    font-size: 1.375em;
+    margin: 0 0 1% 1.5%;
+    padding:0;
+    display: block;
+    float: left;
+
+
+
+}
+.ptf:hover img{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+.rideau{
+    display: block;
+    position: absolute;
+    top: 0;
+    left:0;
+    height: 97.5%;
+    margin:0;
+    padding: 0;
+    background-color: rgba(108, 190, 66, .8) ;
+    color:#fff;
+    transition: all .6s;
+}
+
+.rideau .titre{
+    background-color: rgba(108, 190, 66, .9) ;
+    display: block;
+    padding: .4em;
+
+}
+
+.ptf:hover .rideau{
+    position: absolute;
+    top:  80%;
+
+
+
+
+
+}
+/***************************************/
+/* code correspondant à la page profil */
+
+section.prof {
+    background: #E19324;
+    color: #fff;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    height: 24.5em;
+    padding: 0;
+}
+section.prof_d {
+    background: #E19324;
+    color: #fff;
+    overflow: hidden;
+    overflow-x: hidden;
+    height: 24.5em;
+    padding: 0;
+    margin-left: 0;
+}
+section.prof h3, section.prof_d h3{
+    background-color: #ffb141;
+    color: #fff;
+    font-size: 1.125em;  
+    margin-top:0;
+    width: 100%;
+    padding: .2em;
+}
+article.prof {
+    padding:1%;
+    background: #E19324 url("../images/icons/resume_smaller.png") no-repeat;
+    background-size: /*50px 50px*/ 8.46023688663283%;
+    color: #fff;
+
+
+}
+
+article.prof h4{
+    padding-left: 7.346081232966274%; 
+    margin:0;
+    font-size: 1em;
+    display: inline-block;
+}
+article.prof .annee{
+    display: inline-block;
+    padding: .1875em;
+    background-color: #fff;
+    color:#000;
+    float:right;
+}
+article.prof h5{
+    padding-left:3.75em;  
+    margin:0 0 .625em 0;
+    background-color: transparent;
+    color:#fee0b7;
+    font-size: .8125em;
+    font-weight: 400;
+}
+
+article.logi{
+
+}
+article.logi .l100{
+
+    background-color: #fff;
+    color:#404040;
+    display:block;
+    font-size:.8125em;
+    width:97%;
+    margin: 0px auto 3.322259136212625% 0.7653061224489796%;
+    padding: 3.322259136212625%  0 ;
+
+}
+article.logi .l90{
+
+    background-color: #fff;
+    color:#404040;
+    display:block;
+    font-size:.825em;
+    width:90%;
+    margin: 0 auto 3.322259136212625% 0.8310249307479224%;
+    padding: 3.322259136212625%  0 ;
+}
+article.logi .l80{
+
+    background-color: #fff;
+    color:#404040;
+    display:block;
+    font-size:.825em;
+    width:80%;
+    margin: 0px auto 3.322259136212625% 0.7653061224489796%;
+    padding: 3.322259136212625%  0 ;
+}
+article.logi .l70{
+
+    background-color: #fff;
+    color:#404040;
+    display:block;
+    font-size:.825em;
+    width:70%;
+    margin: 0px auto 3.322259136212625% 0.7653061224489796%;
+    padding: 3.322259136212625%  0 ;
+}
+article.logi .l50{
+
+    background-color: #fff;
+    color:#404040;
+    display:block;
+    font-size:.825em;
+    width:55%;
+    margin: 0px auto 3.322259136212625% 0.7653061224489796%;
+    padding: 3.322259136212625%  0 ;
+}
+
+
+article.logi .d{
+    display: inline-block;
+    float:right;
+    padding-right:2.6578073089701%;
+}
+
+/* Fin page profil */
+/*******************/
+
+
+/***************************************/
+/* code correspondant à la page contact */
+
+section.contact_bl{
+    background-color: #303030;
+    height:24.5em;
+    margin: 1% -.4% 1% 1.7%;
+    padding:0;
+}
+section.contact_bl h3{
+    background:none repeat scroll 0 0 #555555;
+    font-size:1.125em;
+    font-weight:300;
+    color:#fff;
+    margin: 0;
+    padding: .3em;
+}
+article.contact_bl{
+    margin-top:0;
+    background-color: #303030;
+    color:#fff;
+    display:block;
+    padding: 7.117437722419929% 3.3333%;
+}
+article.contact_bl ul{
+    display: block;
+    background-color: inherit;
+    border: solid 1px #303030;
+
+}
+article.contact_bl ul li{
+    display: block;
+    background-color: inherit;
+    font-size:.825em;
+    font-weight:300;
+}
+article.contact_bl ul li strong{
+    font-weight:600;
+}
+
+article.contact_bl form {
+    padding-right: 0;
+}
+
+article.contact_bl form input{
+    width:51.81347150259067%;
+    margin-right:0;
+}
+article.contact_bl form textarea{
+    width:86.35578583765112%;
+    margin-right:0;
+}
+article.contact_bl  form input[type=submit] {
+    width:auto;
+    background-color: #555555;
+    margin-top:10px;
+    color:#fff;
+    border:0;
+    padding:0.1875em .375em;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    body{
+        background-image:none;
+        max-width: 768px;
+    }
+
+    .container_12{
+        max-width: 768px;
+    }
+    .container_12 .grid_12{
+        width: 100%;
+    }
+
+    
+    .container_12 .grid_4{
+        width: 100%;
+        padding:0;
+        margin-left:0;
+    }
+    .container_12 .grid_4 .grid_4{
+        width: 100%;
+    }
+    .container_12 .grid_4{
+        width: 100%;
+    }
+
+    .logo{
+        max-width:100%  !important;
+        float:left;
+        margin-left: 0;
+    }
+    .container_12 .grid_8 {
+        width: 100%;
+        padding:0;
+        margin-left:0;
+    }
+
+
+    .about, .folio, .profil, .ctc{
+        height: 2em;
+        background-image: none;
+        float:left;
+        color:#fff;
+        font-size:1em;
+        padding:.5em 0;
+        text-align:center;
+    }
+    .about:hover, .folio:hover, .profil:hover, .ctc:hover{
+        background-image: none;
+    }
+    .about .onglet, .folio .onglet, .profil .onglet, .ctc .onglet{
+        background-color: inherit;
+        display: block;
+        margin-top: 0px;
+
+    }
+
+    .about .onglet_bas, .folio .onglet_bas, .profil .onglet_bas, .ctc .onglet_bas{
+        display:none;
+    }
+    .about a , .folio a , .profil a , .ctc a {
+        background-color: inherit;
+        color:#fff;
+        font-weight: 600;
+    }
+
+    .corps h3{
+        font-size: 2em;
+    }
+    .corps{
+        font-size: 1.2em;
+        word-wrap: break-word;
+    }   
+    .slb{
+        display: none;
+    }
+    article.ind ul li{
+        background-color: #20BFFA;
+        margin: 0;
+        padding:  0;
+        list-style-type: none;
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+
+    article.ind ul li:hover .info{
+        background-color: inherit;
+
+    }
+
+    article.ind ul li .info{
+        margin:0px 2% 0px 0px;
+        padding: .5em;
+        display: inline-block;
+        font-weight: 400;
+
+    }
+    section .contact_bl ul li, section contact_bl form input {
+        font-size: 1.5em;
+    }
+
+
+    section.prof, section.prof_d{
+        height: auto;
+        overflow: auto;
+        overflow-x: hidden;
+    }
+
+    article.ptf img{
+        width: 100%;
+        text-align: center;
+    }
+
+    .rideau{
+        width: 100%;
+        top: 90%;
+    }
+    .ptf:hover .rideau{
+        width: 100%;
+        top: 90%;
+    }
+
+}
+@media screen and (max-width: 640px) {
+    /*.logo{*/
+    /*    background-image: none;*/
+    /*}*/
+
+    .about a:link, .folio a:link, .ctc a:link, .profil a:link {
+        font-size: .6em;
+    }
+    
+    .rideau{
+        width: 100%;
+        top: 75%;
+    }
+    .ptf:hover .rideau{
+        width: 100%;
+        top: 75%;
+    }
+}
+
