@@ -21,7 +21,7 @@ Exercice html- Css inclusion de scripts externes. -->
 </head>
 <body>
 
-<header class="container_12 centrage">
+<div class="container_12 centrage">
     <div class="grid_12 largeur">
         <div class="social">
             <img src="images/soc-icons/facebook.png" alt="facebook" class="social_face"/>
@@ -36,41 +36,50 @@ Exercice html- Css inclusion de scripts externes. -->
             <img src="images/soc-icons/google.png" alt="facebook" class="social_face"/>
         </div>
     </div>
+    <header>
+        <div class="grid_4 logo">
+            <h1>Jiphphi Novitz</h1>
+            <h2>Développeur Web</h2>
+        </div>
 
-    <div class="grid_4 logo">
-        <h1>Jiphphi Novitz</h1>
-        <h2>Développeur Web</h2>
-    </div>
+        <ul class="pages">
+            <li class="grid_3 about">
 
-    <ul class="grid_8">
-        <li class="grid_3 about">
-            <a href="index.html" title="John Doe Home">
-                <span class="onglet"> ABOUT</span>
-                <span class="onglet_bas"> About me</span>
-            </a>
-        </li>
-        <li class="grid_3 folio">
-            <a href="portfolio.html" title="portfolio John Doe ">
-                <span class="onglet"> PORTFOLIO</span>
-                <span class="onglet_bas"> Mes travaux</span>
-            </a>
+                <a href="index.html" class="onglet" title="John Doe Home">
+                    ABOUT ME
+                </a>
+                <a href="index.html" class="onglet_bas" title="John Doe Home">
+                    About me
+                </a>
+            </li>
+            <li class="grid_3 folio">
+                <a href="portfolio.html" class="onglet" title="portfolio John Doe ">
+                    PORTFOLIO
+                </a>
+                <a href="portfolio.html" class="onglet_bas" title="portfolio John Doe ">
+                    Mes travaux
+                </a>
 
-        </li>
-        <li class="grid_3 profil">
-            <a href="profil.html" title="Architecte John Doe">
-                <span class="onglet"> PROFIL</span>
-                <span class="onglet_bas"> Mon profil</span>
-            </a>
-        </li>
-        <li class="grid_3 ctc">
-            <a href="contact.html" title="contact John Doe">
-                <span class="onglet"> CONTACT</span>
-                <span class="onglet_bas"> Contactez-moi</span>
-            </a>
-        </li>
-    </ul>
-
-</header>
+            </li>
+            <li class="grid_3 profil">
+                <a href="profil.html" class="onglet" title="Architecte John Doe">
+                    PROFIL
+                </a>
+                <a href="profil.html" class="onglet_bas" title="Architecte John Doe">
+                    Mon profil
+                </a>
+            </li>
+            <li class="grid_3 ctc">
+                <a href="contact.html" class="onglet" title="contact John Doe">
+                    CONTACT
+                </a>
+                <a href="contact.html" class="onglet_bas" title="Architecte John Doe">
+                    Contactez-moi
+                </a>
+            </li>
+        </ul>
+    </header>
+</div>
 
 <section class="container_12 centrage">
 
