@@ -4,6 +4,10 @@ body {
     background-size: cover;
 }
 
+#container {
+    position: relative;
+}
+
 .centrage {
     margin: 10px auto;
     overflow: hidden;
@@ -39,9 +43,9 @@ body {
 
 }
 
-header {
-    min-height: 100vh;
-}
+/*header {*/
+/*    min-height: 100vh;*/
+/*}*/
 
 .logo {
     min-height: 50vh;
@@ -74,15 +78,44 @@ header {
 }
 
 
-header .pages {
+/*header .pages {*/
+.pages {
+    position: absolute;
+    top: 200vh;
+    left: 0;
+    right: 0;
     width: 90%;
     display: flex;
-    margin: 2rem auto;
-    padding: 16px 0 0 0;
+    margin: auto;
+    /*margin: 2rem auto;*/
+    /*padding: 16px 0 0 0;*/
     flex-wrap: wrap;
 }
 
-header .pages > li {
+.pages:after {
+    background-color: rgba(255, 255, 255, 70%);
+    width: 100vw;
+    height: 100vh;
+    content: " ";
+    z-index: 0;
+}
+
+.show {
+    top: 2rem !important;
+}
+
+#menu {
+    height: 30px;
+    width: 30px;
+    font-size: 24px;
+    background-color: transparent;
+    color: #000000;
+    border: 0;
+    float: right;
+}
+
+/*header .pages > li {*/
+.pages > li {
     display: flex !important;
     flex-basis: calc(50% - 8px);
     flex-direction: column;
@@ -104,9 +137,6 @@ header .pages > li {
     text-decoration: none;
 }
 
-/*header .pages > li:first-child {*/
-/*    margin-right: 0;*/
-/*}*/
 
 .onglet {
     display: block;
@@ -306,13 +336,20 @@ header .pages > li {
         right: 3.3222591362126%;
     }
 
-    header .pages {
+    /*header .pages {*/
+    .pages {
+        position: static;
         flex-wrap: nowrap;
         flex: 0 1 auto;
         margin: 0;
     }
 
-    header .pages > li {
+    .pages:after {
+        display: none;
+    }
+
+    /*header .pages > li {*/
+    .pages > li {
         /*height: 8.75em;*/
         /*flex-basis: calc(24% - 8px);*/
         min-width: 0;

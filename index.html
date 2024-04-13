@@ -17,11 +17,12 @@ Exercice html- Css inclusion de scripts externes. -->
     <link type="text/css" rel="stylesheet" href="css/960.css">
     <link type="text/css" rel="stylesheet" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script defer src="js/main.js"></script>
 
 </head>
 <body>
 
-<div class="container_12 centrage">
+<div class="container_12 centrage" id="container">
     <div class="grid_12 largeur">
         <div class="social">
             <img src="images/soc-icons/facebook.png" alt="facebook" class="social_face"/>
@@ -35,6 +36,14 @@ Exercice html- Css inclusion de scripts externes. -->
         <div class="social">
             <img src="images/soc-icons/google.png" alt="facebook" class="social_face"/>
         </div>
+
+            <button id="menu">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" stroke-width="1.5"
+                     stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+                </svg>
+            </button>
     </div>
     <header>
         <div class="grid_4 logo">
@@ -42,7 +51,7 @@ Exercice html- Css inclusion de scripts externes. -->
             <h2>Développeur Web</h2>
         </div>
 
-        <ul class="pages">
+        <ul class="pages" id="pages">
             <li class="grid_3 about">
 
                 <a href="index.html" class="onglet" title="John Doe Home">
