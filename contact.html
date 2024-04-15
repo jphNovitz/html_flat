@@ -4,109 +4,130 @@ Jean-Philippe
 Institut Saint-Laurent Liege
 Webdeveloper (2014)
 Interface Flat
-Exercice html- Css inslusion de scripts externes. -->
-<html>
-    <head>
-        <title>Contact architecte | John Doe</title>
-        <meta name="description" content="Collaborations travaux realiés diverses entreprises liegeoises ont construit mon savoir-faire d'architecte. Maitrise de logiciels tels Photoshop Autocad Revit ou bureautique. John Doe." />
-        <meta name="robots" content="noindex,nofollow">
+Exercice html- Css inclusion de scripts externes. -->
+<!doctype html>
+<html lang="fr">
+<head>
+    <title>Expérience professionnelle et savoir-faire d'un Développeur Web | exempl.es</title>
+    <meta name="description"
+          content="Collaborations travaux realisés diverses entreprises liégeoises ont construit mon savoir-faire d'architecte. Maitrise de logiciels tels que PhpStorm, VsCode, Vim. Languages tels PHP, Javascript, Symfony, Laravel, HTML CSS."/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link type="text/css" rel="stylesheet" href="css/flexslider.css" media="screen"/>
+    <meta name="viewport" content="width=device-width initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/960.css">
+    <link type="text/css" rel="stylesheet" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <script defer src="js/main.js"></script>
 
-        <meta name="viewport" content="width=device-width initial-scale=1.0" >
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-         <link type="text/css" rel="stylesheet" href="css/960.css">
-         <link type="text/css" rel="stylesheet" href="css/flat.css">
-         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-       
-    </head>
-    <body>
+</head>
+<body>
 
-        <header class="container_12 centrage">
-            <div class="grid_12 largeur">
-                <div class="social"> 
-                    <img src="images/soc-icons/facebook.png" alt="facebook" class="social_face"/> 
-                </div>
-                <div class="social"> 
-                    <img src="images/soc-icons/twitter.png" alt="facebook" class="social_face"/> 
-                </div>
-                <div class="social"> 
-                    <img src="images/soc-icons/linkedin.png" alt="facebook" class="social_face"/> 
-                </div>
-                <div class="social"> 
-                    <img src="images/soc-icons/google.png" alt="facebook" class="social_face"/> 
-                </div>
-            </div>
-
-            <div class="grid_4 logo">
-                <h1>John Doe</h1> 
-                <br /><h2>Architecte-Urbaniste</h2>
-            </div>
-
-            <ul class="grid_8" >
-                <li class="grid_3 about"> 
-                    <a href="index.html" title="John Doe Home">
-                        <span class="onglet"> ABOUT</span>
-                        <span class="onglet_bas"> About me</span>
-                    </a>
-                </li>
-                <li class="grid_3 folio"> 
-                    <a href="portfolio.html" title="portfolio John Doe ">
-                        <span class="onglet"> PORTFOLIO</span>
-                        <span class="onglet_bas"> Mes travaux</span>
-                    </a>
-
-                </li>
-                <li class="grid_3 profil"> 
-                    <a href="profil.html" title="Architecte John Doe">
-                        <span class="onglet"> PROFIL</span>
-                        <span class="onglet_bas"> Mon profil</span>
-                    </a>
-                </li>
-                <li class="grid_3 ctc">
-                    <a href="contact.html" title="contact John Doe">
-                        <span class="onglet"> CONTACT</span>
-                        <span class="onglet_bas"> Contactez-moi</span>
-                    </a>
-                </li>
-            </ul>
-
-        </header>
-
-        <div class="container_12 centrage">
-            <section class="contact_bl grid_4 ">
-                <h3>Contact  info</h3>
-                <article class="contact_bl "> 
-                    <ul>
-                        <li><strong>Adresse: </strong>
-                            <br />33 Rue Saint-Laurent 4000 Liège</li>
-                        <li><strong>Email:  </strong>
-                            <br />smthn@gmail.com</li>
-                        <li><strong>Tel: </strong>
-                            <br /> +123 456 789 111</li>
-                        <li><strong>Site: </strong>
-                            <br /> www.johndoe.com</li>
-                    </ul>
-
-                </article>
-
-            </section>
-            <section class="contact_bl grid_8">
-                <h3>Contactez-moi</h3>
-                <article class="contact_bl">
-                    <form>
-                        <label for="nom">Votre nom:</label>
-                        <br /><input type="text" id="nom">
-                        <br /><label for="email">Votre Email</label>
-                        <br /><input type="text" id="email">
-                        <br /><label for="message">Votre message:</label>
-                        <br /><textarea id="message"> </textarea>
-
-                        <br /><input type="submit" name="envoi" value="C'est partiii !">
-                    </form>
-
-                </article>
-
-            </section>
+<div class="container_12 centrage" id="container">
+    <div class="grid_12 largeur">
+        <div class="social">
+            <img src="images/soc-icons/facebook.png" alt="facebook" class="social_face"/>
+        </div>
+        <div class="social">
+            <img src="images/soc-icons/twitter.png" alt="facebook" class="social_face"/>
+        </div>
+        <div class="social">
+            <img src="images/soc-icons/linkedin.png" alt="facebook" class="social_face"/>
+        </div>
+        <div class="social">
+            <img src="images/soc-icons/google.png" alt="facebook" class="social_face"/>
         </div>
 
-    </body>
+        <button id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="menu-icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </button>
+    </div>
+    <header>
+        <div class="grid_4 logo">
+            <h1>Jiphphi Novitz</h1>
+            <h2>Développeur Web</h2>
+        </div>
+
+        <ul class="pages" id="pages">
+            <li class="grid_3 about">
+
+                <a href="index.html" class="onglet" title="John Doe Home">
+                    ABOUT ME
+                </a>
+                <a href="index.html" class="onglet_bas" title="John Doe Home">
+                    About me
+                </a>
+            </li>
+            <li class="grid_3 folio">
+                <a href="portfolio.html" class="onglet" title="portfolio John Doe ">
+                    PORTFOLIO
+                </a>
+                <a href="portfolio.html" class="onglet_bas" title="portfolio John Doe ">
+                    Mes travaux
+                </a>
+
+            </li>
+            <li class="grid_3 profil">
+                <a href="profil.html" class="onglet" title="Architecte John Doe">
+                    PROFIL
+                </a>
+                <a href="profil.html" class="onglet_bas" title="Architecte John Doe">
+                    Mon profil
+                </a>
+            </li>
+            <li class="grid_3 ctc">
+                <a href="contact.html" class="onglet" title="contact John Doe">
+                    CONTACT
+                </a>
+                <a href="contact.html" class="onglet_bas" title="Architecte John Doe">
+                    Contactez-moi
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    <section class="container_12 centrage" id="index_content">
+        <div class="right contact">
+            <article class="corps">
+                <h3>Contact info</h3>
+                <ul>
+                    <li><span class="label">Adresse : </span>
+                        33 Rue Saint-Laurent <br /> 4000 Liège
+                    </li>
+                    <li><span class="label">Email : </span>
+                        infos@exempl.es
+                    </li>
+                    <li><span class="label">Tel : </span>
+                         +123 456 789 111
+                    </li>
+                    <li><span class="label">Site : </span>
+                         www.exempl.es
+                    </li>
+                </ul>
+
+            </article>
+            <article class="infos">
+                <h3>Contactez-moi</h3>
+                <form>
+                    <label for="nom">Votre nom:</label>
+                    <br/><input type="text" id="nom">
+                    <br/><label for="email">Votre Email</label>
+                    <br/><input type="text" id="email">
+                    <br/><label for="message">Votre message:</label>
+                    <br/><textarea id="message"> </textarea>
+
+                    <br/><input type="submit" name="envoi" value="C'est partiii !">
+                </form>
+
+            </article>
+        </div>
+    </section>
+</div>
+
+
+</body>
+
 </html>
