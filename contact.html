@@ -95,16 +95,16 @@ Exercice html- Css inclusion de scripts externes. -->
                 <h3>Contact info</h3>
                 <ul>
                     <li><span class="label">Adresse : </span>
-                        33 Rue Saint-Laurent <br /> 4000 Liège
+                        33 Rue Saint-Laurent <br/> 4000 Liège
                     </li>
                     <li><span class="label">Email : </span>
                         infos@exempl.es
                     </li>
                     <li><span class="label">Tel : </span>
-                         +123 456 789 111
+                        +123 456 789 111
                     </li>
                     <li><span class="label">Site : </span>
-                         www.exempl.es
+                        www.exempl.es
                     </li>
                 </ul>
 
@@ -112,14 +112,21 @@ Exercice html- Css inclusion de scripts externes. -->
             <article class="infos">
                 <h3>Contactez-moi</h3>
                 <form>
-                    <label for="nom">Votre nom:</label>
-                    <br/><input type="text" id="nom">
-                    <br/><label for="email">Votre Email</label>
-                    <br/><input type="text" id="email">
-                    <br/><label for="message">Votre message:</label>
-                    <br/><textarea id="message"> </textarea>
-
-                    <br/><input type="submit" name="envoi" value="C'est partiii !">
+                    <div class="row">
+                        <label for="nom">Votre nom:</label>
+                        <input type="text" id="nom">
+                    </div>
+                    <div class="row">
+                        <label for="email">Votre Email</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="row">
+                        <label for="message">Votre message:</label>
+                        <textarea id="message"> </textarea>
+                    </div>
+                    <div class="row">
+                        <input type="submit" name="envoi" class="button" value="C'est partiii !">
+                    </div>
                 </form>
 
             </article>

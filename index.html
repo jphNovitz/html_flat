@@ -37,16 +37,16 @@ Exercice html- Css inclusion de scripts externes. -->
             <img src="images/soc-icons/google.png" alt="facebook" class="social_face"/>
         </div>
 
-            <button id="menu">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" stroke-width="1.5"
-                     stroke="currentColor" class="menu-icon">
-                    <path stroke-linecap="round" stroke-linejoin="round"
-                          d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
-                </svg>
-            </button>
+        <button id="menu">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentcolor" viewBox="0 0 24 24" stroke-width="1.5"
+                 stroke="currentColor" class="menu-icon">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+            </svg>
+        </button>
     </div>
     <header>
-        <div class="grid_4 logo">
+        <div class="grid_4 logo_index">
             <h1>Jiphphi Novitz</h1>
             <h2>Développeur Web</h2>
         </div>
@@ -88,53 +88,55 @@ Exercice html- Css inclusion de scripts externes. -->
             </li>
         </ul>
     </header>
-</div>
 
-<section class="container_12 centrage" id="index_content">
+    <section class="container_12 centrage" id="index_content">
 
-    <article class="no_js" id="slider_container">
-        <div class="flexslider">
-            <ul class="slides">
-                <li>
-                    <img src="images/slides/me-1.jpg" alt="John Doe_1"/>
-                </li>
-                <li>
-                    <img src="images/slides/me-2.jpg" alt="John Doe_2"/>
-                </li>
-                <li>
-                    <img src="images/slides/me-3.jpg" alt="John Doe"/>
-                </li>
+        <article class="no_js" id="slider_container">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <img src="images/slides/me-1.jpg" alt="John Doe_1"/>
+                    </li>
+                    <li>
+                        <img src="images/slides/me-2.jpg" alt="John Doe_2"/>
+                    </li>
+                    <li>
+                        <img src="images/slides/me-3.jpg" alt="John Doe"/>
+                    </li>
 
-            </ul>
+                </ul>
+            </div>
+        </article>
+        <div class="right">
+            <article class="corps">
+                <h3>John Doe - Architecte
+                    <br/>Réalisation et suivi de projets de grande envergure.</h3>
+                <p>"L'imagination est plus importante que le savoir."
+                    <br/>Albert Einstein</p>
+
+                <p>Spécialiste dans le domaine depuis plus de 20 ans, je suis votre conseiller technique et artistique
+                    pour votre projet immobilier, qu’il s’agisse de votre future habitation, ou d’un bâtiment public,
+                    commercial ou industriel.</p>
+            </article>
+            <article class="infos">
+                <ul>
+                    <li><span class="label">Nom : </span> John Doe</li>
+                    <li><span class="label">Age : </span> 35</li>
+                    <li><span class="label">Adresse : </span> 33 Rue Saint-Laurent 4000 Liège</li>
+                    <li><span class="label">  Email:</span> john@doe.be</li>
+
+                    <li><span class="label"> Téléphone: </span> +32 (0)4 223 11 31</li>
+                </ul>
+            </article>
         </div>
-    </article>
-    <div class="right">
-        <article class="corps">
-            <h3>John Doe - Architecte
-                <br/>Réalisation et suivi de projets de grande envergure.</h3>
-            <p>"L'imagination est plus importante que le savoir."
-                <br/>Albert Einstein</p>
-
-            <p>Spécialiste dans le domaine depuis plus de 20 ans, je suis votre conseiller technique et artistique
-                pour votre projet immobilier, qu’il s’agisse de votre future habitation, ou d’un bâtiment public,
-                commercial ou industriel.</p>
-        </article>
-        <article class="infos">
-            <ul>
-                <li><span class="label">Nom : </span> John Doe</li>
-                <li><span class="label">Age : </span> 35</li>
-                <li><span class="label">Adresse : </span> 33 Rue Saint-Laurent 4000 Liège</li>
-                <li><span class="label">  Email:</span> john@doe.be</li>
-
-                <li><span class="label"> Téléphone: </span> +32 (0)4 223 11 31</li>
-            </ul>
-        </article>
-    </div>
-</section>
-
+    </section>
+</div>
 <!-- jQuery -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>
+<!--<script defer src="js/jquery-3.7.1.min.js"></script>-->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>-->
+<!--<script>window.jQuery || document.write('<script src="js/libs/jquery-1.7.min.js">\x3C/script>')</script>-->
 
 <!-- FlexSlider -->
 <script defer src="jquery.flexslider.js"></script>
