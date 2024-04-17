@@ -81,7 +81,7 @@ body {
 .logo {
     min-height: 8.75rem;
     min-width: 100%;
-    flex:  1 0 31.333%;
+    flex: 1 0 31.333%;
     flex-direction: column;
     background-color: #fff;
     background-image: url(../images/logoA.png);
@@ -284,8 +284,10 @@ body {
 
 #index_content .right .corps h3,
 #index_content .right .infos h3,
+#index_content .xp h3,
+#index_content .logiciel h3,
 #index_content .right .corps p {
-    margin: 0 ;
+    margin: 0;
     padding: 24px;
     color: #fff;
 }
@@ -317,7 +319,7 @@ body {
 }
 
 #index_content .right .infos li,
-#index_content .right.contact .corps li{
+#index_content .right.contact .corps li {
     width: 100%;
     display: flex;
     padding: 8px 0 8px 0;
@@ -346,33 +348,51 @@ body {
     color: #e0dede;
 }
 
-#index_content .right.contact{
+#index_content .right.contact {
     flex-direction: column;
-    margin: 0 ;
+    margin: 0;
 }
+
 #index_content .right.contact > article {
     flex-direction: column;
     margin: 0 6px;
 }
 
+#index_content .xp,
+#index_content .logiciel,
 #index_content .right.contact .infos,
 #index_content .right.contact .corps {
-
     padding: 0;
     min-width: 0;
     width: 100%;
     flex: 1;
     flex-direction: column;
+    margin: 16px 0;
+}
+
+#index_content .right.contact .infos,
+#index_content .right.contact .corps {
     background-color: #303030;
     color: #e0dede;
-    margin: 16px 0;
+}
+
+#index_content .logiciel,
+#index_content .xp {
+    background-color: #E19324;
+    color: #fff;
 }
 
 
 #index_content .right.contact .infos h3,
-#index_content .right.contact .corps h3{
+#index_content .right.contact .corps h3 {
     background-color: #404040;
     color: #e0dede;
+}
+
+#index_content .xp h3,
+#index_content .logiciel h3 {
+    background-color: #EAB569;
+    color: #fff;
 }
 
 #index_content .right.contact .corps ul,
@@ -441,11 +461,84 @@ body {
     font-size: 1.125rem;
     border-radius: 8px;
 }
-#index_content .right.contact .infos form .button{
+
+#index_content .right.contact .infos form .button {
 
     width: 100%;
     padding: 8px 4px;
 }
+
+
+#index_content .xp article {
+
+}
+
+#index_content .xp article h4 {
+    font-weight: bolder;
+    font-size: 1.115rem;
+    line-height: 2rem;
+    padding: 1px 4px 1px 2.25rem;
+    background-image: url("../images/icons/resume_smaller.png");
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    background-position: 4px center;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#index_content .xp article h5 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#index_content .xp article p {
+    font-size: 1rem;
+}
+
+#index_content .xp article h5,
+#index_content .xp article p {
+    margin-top: -24px;
+    padding: 4px;
+}
+
+#index_content .xp article h4 .annee {
+    padding: 2px 4px;
+    background-color: #e0dede;
+    color: #000;
+}
+
+
+#index_content .logiciel article .score{
+    width: 5%;
+    background-color: #fff;
+    color: #404040;
+    display: block;
+    font-size: .8125em;
+    margin: 0 auto 3.322259136212625% 0.7653061224489796%;
+    padding: 8px 0;
+}
+
+#index_content .logiciel article:nth-child(2) .score {
+    width: 97% ;
+}
+
+#index_content .logiciel article:nth-child(3) .score {
+    width: 90% ;
+}
+#index_content .logiciel article:nth-child(4) .score {
+    width: 85% ;
+}
+#index_content .logiciel article:nth-child(5) .score {
+    width: 80% ;
+}
+#index_content .logiciel article:nth-child(6) .score {
+    width: 75% ;
+}
+/*#index_content .logiciel article .score:nth-child(2){*/
+/*    width: 50% !important;*/
+/*}*/
+
 
 
 @media (min-width: 768px) {
@@ -570,12 +663,13 @@ body {
         margin: 0 4px;
     }
 
-    #index_content .right.contact{
+    #index_content .right.contact {
         flex-direction: row;
-        margin: 0 ;
+        margin: 0;
         justify-content: space-between;
         gap: 8px;
     }
+
     #index_content .right.contact > article {
         flex-direction: row;
         margin: 0 6px;
@@ -607,7 +701,9 @@ body {
     #index_content .right .corps h3,
     #index_content .right .corps p,
     #index_content .right.contact h3,
-    #index_content .right.contact p {
+    #index_content .right.contact p,
+    #index_content .logiciel,
+    #index_content .xp {
         padding: 16px;;
     }
 
@@ -650,7 +746,6 @@ body {
     /*    !*background-color: #303030;*!*/
     /*    !*color: #e0dede;*!*/
     /*}*/
-
     #index_content .right.contact .corps ul,
     #index_content .right. .infos ul {
         margin: 0;
@@ -685,16 +780,15 @@ body {
         color: #fff;
     }
 
-   /* #index_content .right.contact .corps li {
-        flex-direction: column;
-        background-color: transparent;
-    }
+    /* #index_content .right.contact .corps li {
+         flex-direction: column;
+         background-color: transparent;
+     }
 
-    #index_content .right.contact .corps li .label {
-        font-weight: bolder;
-        margin-left: -16px;
-    }*/
-
+     #index_content .right.contact .corps li .label {
+         font-weight: bolder;
+         margin-left: -16px;
+     }*/
     /*#index_content .right.contact .infos form {*/
     /*    margin: 8px;*/
     /*    min-width: 0;*/
@@ -703,7 +797,6 @@ body {
     /*    justify-content: space-between;*/
     /*    gap: 16px;*/
     /*}*/
-
     /*#index_content .right.contact .infos form .row {*/
     /*    min-width: 0;*/
     /*    padding: 8px;*/
@@ -711,15 +804,12 @@ body {
     /*    flex-direction: column;*/
     /*    justify-content: space-between;*/
     /*    gap: 8px;*/
-
     /*}*/
-
     /*#index_content .right.contact .infos form label {*/
     /*    font-size: 1.125rem;*/
     /*    font-weight: bold;*/
     /*    margin-bottom: 4px;*/
     /*}*/
-
     /*#index_content .right.contact .infos form input,*/
     /*#index_content .right.contact .infos form textarea {*/
     /*    min-width: 0;*/
@@ -727,11 +817,10 @@ body {
     /*    font-size: 1.125rem;*/
     /*    border-radius: 8px;*/
     /*}*/
-    #index_content .right.contact .infos form .button{
-
+    #index_content .right.contact .infos form .button {
         max-width: max-content;
-        /*padding: 8px 4px;*/
     }
+
 
     /*#index_content .right .infos li .label {*/
     /*    width: 31.333%;*/
