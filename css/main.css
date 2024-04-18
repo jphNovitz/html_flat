@@ -509,7 +509,7 @@ body {
 }
 
 
-#index_content .logiciel article .score{
+#index_content .logiciel article .score {
     width: 5%;
     background-color: #fff;
     color: #404040;
@@ -520,26 +520,87 @@ body {
 }
 
 #index_content .logiciel article:nth-child(2) .score {
-    width: 97% ;
+    width: 97%;
 }
 
 #index_content .logiciel article:nth-child(3) .score {
-    width: 90% ;
+    width: 90%;
 }
+
 #index_content .logiciel article:nth-child(4) .score {
-    width: 85% ;
+    width: 85%;
 }
+
 #index_content .logiciel article:nth-child(5) .score {
-    width: 80% ;
+    width: 80%;
 }
+
 #index_content .logiciel article:nth-child(6) .score {
-    width: 75% ;
+    width: 75%;
 }
+
 /*#index_content .logiciel article .score:nth-child(2){*/
 /*    width: 50% !important;*/
 /*}*/
 
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
 
+.ptf {
+    min-width: 0;
+    width: 100%;
+    flex-basis: 100%;
+    /*height: 66.44518272425249%;*/
+    position: relative;
+    overflow: hidden;
+    font-size: 1.375em;
+    margin: 0 0 1% 1.5%;
+    padding: 0;
+    display: block;
+    float: left;
+
+
+}
+
+.ptf img{
+    width: 100%;
+}
+
+.ptf:hover img {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.rideau {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 97.5%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(108, 190, 66, .8);
+    color: #fff;
+    transition: all .6s;
+}
+
+.rideau .titre {
+    background-color: rgba(108, 190, 66, .9);
+    display: block;
+    padding: .4em;
+
+}
+
+.ptf:hover .rideau {
+    position: absolute;
+    top: 80%;
+
+}
 
 @media (min-width: 768px) {
 
@@ -692,9 +753,10 @@ body {
         /*background-color: #303030;*/
         /*color: #e0dede;*/
     }
-        #index_content .right.contact .corps {
-            border: solid 2px #303030;
-        }
+
+    #index_content .right.contact .corps {
+        border: solid 2px #303030;
+    }
 
     #index_content .logiciel {
         border: solid 2px #E19324;
@@ -710,7 +772,7 @@ body {
     #index_content .right.contact h3,
     #index_content .right.contact p,
     #index_content .logiciel h3,
-    #index_content .xp h3{
+    #index_content .xp h3 {
         padding: 16px;;
     }
 
@@ -843,4 +905,59 @@ body {
     /*    font-weight: bold;*/
     /*}*/
 
+    /*portfolio*/
+
+
+    .portfolio{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4px;
+        margin: 0;
+        padding: 0;
+    }
+    .ptf {
+        width: 31.3333%;
+        flex-basis: 31.333%;
+        /*height: 66.44518272425249%;*/
+        /*position: relative;*/
+        /*overflow: hidden;*/
+        /*font-size: 1.375em;*/
+        /*margin: 0 0 1% 1.5%;*/
+        /*padding: 0;*/
+        /*display: block;*/
+        /*float: left;*/
+    }
+
+    /*.ptf:hover img {*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*    overflow: hidden;*/
+    /*}*/
+
+    /*.rideau {*/
+    /*    display: block;*/
+    /*    position: absolute;*/
+    /*    top: 0;*/
+    /*    left: 0;*/
+    /*    width: 100%;*/
+    /*    height: 97.5%;*/
+    /*    margin: 0;*/
+    /*    padding: 0;*/
+    /*    background-color: rgba(108, 190, 66, .8);*/
+    /*    color: #fff;*/
+    /*    transition: all .6s;*/
+    /*}*/
+
+    /*.rideau .titre {*/
+    /*    background-color: rgba(108, 190, 66, .9);*/
+    /*    display: block;*/
+    /*    padding: .4em;*/
+
+    /*}*/
+
+    /*.ptf:hover .rideau {*/
+    /*    position: absolute;*/
+    /*    top: 80%;*/
+
+    /*}*/
 }
