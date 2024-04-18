@@ -477,7 +477,7 @@ body {
     font-weight: bolder;
     font-size: 1.115rem;
     line-height: 2rem;
-    padding: 1px 4px 1px 2.25rem;
+    padding: 1px 4px 1px calc(2rem + 8px);
     background-image: url("../images/icons/resume_smaller.png");
     background-repeat: no-repeat;
     background-size: 2rem;
@@ -637,7 +637,7 @@ body {
         margin-left: 0;
     }
 
-    .pages > li:first-child {
+    .pages > li:last-child {
         margin-right: 0;
     }
 
@@ -680,10 +680,11 @@ body {
         width: 50%;
     }
 
-    #index_content .right.contact .corps {
+    #index_content .right.contact .corps,
+    #index_content .logiciel {
         flex: 0 1 31.333%;
         margin: 16px 8px;
-        border: solid 2px #303030;
+
         /*!*width: 31.333%;*!*/
         /*min-width: 0;*/
         /*flex: 0 1 31.333%;*/
@@ -691,7 +692,13 @@ body {
         /*background-color: #303030;*/
         /*color: #e0dede;*/
     }
+        #index_content .right.contact .corps {
+            border: solid 2px #303030;
+        }
 
+    #index_content .logiciel {
+        border: solid 2px #E19324;
+    }
 
     #index_content .right {
         width: 100%;
@@ -702,8 +709,8 @@ body {
     #index_content .right .corps p,
     #index_content .right.contact h3,
     #index_content .right.contact p,
-    #index_content .logiciel,
-    #index_content .xp {
+    #index_content .logiciel h3,
+    #index_content .xp h3{
         padding: 16px;;
     }
 
@@ -731,6 +738,7 @@ body {
     /*    padding: 0 4px;*/
     /*}*/
     /*#index_content .right .corps ul{*/
+    /*#index_content .xp,*/
     #index_content .right .infos {
         margin-top: 0;
         width: 50%;
@@ -767,7 +775,8 @@ body {
 
 
     #index_content .right.contact .corps li,
-    #index_content .right .infos li {
+    #index_content .right .infos li,
+    #index_content .xp li {
         width: 100%;
         display: flex;
         padding: 8px 0 8px 0;
@@ -775,7 +784,8 @@ body {
         list-style-type: none;
     }
 
-    #index_content .right .infos li {
+    #index_content .right .infos li,
+    #index_content .xp li {
         background-color: #01A1DD;
         color: #fff;
     }
