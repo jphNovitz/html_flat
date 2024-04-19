@@ -90,12 +90,12 @@ Exercice html- Css inclusion de scripts externes. -->
     </header>
 
     <section class="container_12 centrage" id="index_content">
-        <div class="right contact">
+        <div class="contact">
             <article class="corps">
                 <h3>Contact info</h3>
                 <ul>
                     <li><span class="label">Adresse : </span>
-                        33 Rue Saint-Laurent <br/> 4000 Liège
+                         Rue de Lipsum 9 <br/> 4030  Grivegnée
                     </li>
                     <li><span class="label">Email : </span>
                         infos@exempl.es
@@ -125,9 +125,14 @@ Exercice html- Css inclusion de scripts externes. -->
                         <textarea id="message"> </textarea>
                     </div>
                     <div class="row">
-                        <input type="submit" name="envoi" class="button" value="C'est partiii !">
+                        <input type="submit" disabled="disabled" id="submit" name="envoi" class="button" value="C'est partiii !">
                     </div>
                 </form>
+
+                <div class="avertissement">
+                    Le bouton d'envoi du formulaire a été désactivé pour éviter le spam et pour des raisons de démonstration.
+                    Veuillez me contacter directement par email pour toute demande. Merci de votre compréhension.
+                </div>
 
             </article>
         </div>
